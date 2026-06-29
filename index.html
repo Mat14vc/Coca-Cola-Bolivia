@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola Bolivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Coca-Cola</h2>
+            <ul class="menu">
+                <li><a href="#" class="nav-link activo" data-seccion="inicio">Inicio</a></li>
+                <li><a href="#" class="nav-link" data-seccion="productos">Productos</a></li>
+                <li><a href="#" class="nav-link" data-seccion="promociones">Promociones</a></li>
+                <li><a href="#" class="nav-link" data-seccion="nosotros">Nosotros</a></li>
+                <li><a href="#" class="nav-link" data-seccion="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section class="seccion activa" id="inicio">
+        <div class="hero">
+            <div class="hero-texto">
+                <p class="hero-sub">Bienvenido a</p>
+                <h1>Coca-Cola <span>Bolivia</span></h1>
+                <p class="hero-desc">Destapa la felicidad. Refresca tus momentos con el sabor auténtico que une a Bolivia.</p>
+                <button class="btn-hero" data-seccion="productos">Ver Productos</button>
+            </div>
+            <div class="hero-imagen">
+                <img src="imagenes/cocacola.jpg" alt="Coca-Cola">
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h2>+50</h2>
+                <p>Años en Bolivia</p>
+            </div>
+            <div class="stat">
+                <h2>200+</h2>
+                <p>Países en el mundo</p>
+            </div>
+            <div class="stat">
+                <h2>4</h2>
+                <p>Sabores disponibles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="seccion" id="productos">
+        <h2 class="seccion-titulo">Nuestros Productos</h2>
+        <div class="cards-container">
+
+            <div class="card">
+                <img src="imagenes/cocacola.jpg" alt="Coca-Cola Original">
+                <h2>Coca-Cola Original</h2>
+                <p>Botella 2 Litros.</p>
+                <h3>Bs. 12</h3>
+                <button class="btn-oferta" data-oferta="2x1 en Coca-Cola Original">Ver Oferta</button>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/zero.jpg" alt="Coca-Cola Zero">
+                <h2>Coca-Cola Zero</h2>
+                <p>Botella 2 Litros.</p>
+                <h3>Bs. 12</h3>
+                <button class="btn-oferta" data-oferta="20% de descuento en Coca-Cola Zero">Ver Oferta</button>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/sprite.jpg" alt="Sprite">
+                <h2>Sprite</h2>
+                <p>Botella 2 Litros.</p>
+                <h3>Bs. 11</h3>
+                <button class="btn-oferta" data-oferta="Combo con hamburguesa">Ver Oferta</button>
+            </div>
+
+            <div class="card">
+                <img src="imagenes/fanta.jpg" alt="Fanta">
+                <h2>Fanta</h2>
+                <p>Botella 2 Litros.</p>
+                <h3>Bs. 11</h3>
+                <button class="btn-oferta" data-oferta="15% de descuento en Fanta">Ver Oferta</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROMOCIONES -->
+    <section class="seccion" id="promociones">
+        <h2 class="seccion-titulo">Promociones de la Semana</h2>
+        <div class="promos-container">
+
+            <div class="promo">
+                <span>🥤</span>
+                <h3>Coca-Cola Original</h3>
+                <p>Compra 2 y lleva 3.</p>
+            </div>
+
+            <div class="promo">
+                <span>🥤</span>
+                <h3>Coca-Cola Zero</h3>
+                <p>20% de descuento.</p>
+            </div>
+
+            <div class="promo">
+                <span>🥤</span>
+                <h3>Sprite</h3>
+                <p>Combo con hamburguesa.</p>
+            </div>
+
+            <div class="promo">
+                <span>🥤</span>
+                <h3>Fanta</h3>
+                <p>15% de descuento.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="seccion" id="nosotros">
+        <h2 class="seccion-titulo">Nosotros</h2>
+        <p class="nosotros-desc">Coca-Cola Bolivia forma parte de una de las marcas más reconocidas del mundo, presente en más de 200 países. En Bolivia, llevamos décadas refrescando los momentos más especiales de las familias bolivianas.</p>
+        <div class="nosotros-cards">
+
+            <div class="nosotros-card">
+                <span>🌎</span>
+                <h3>Presencia Global</h3>
+                <p>Más de 200 países confían en nuestro sabor inconfundible.</p>
+            </div>
+
+            <div class="nosotros-card">
+                <span>🤝</span>
+                <h3>Compromiso Local</h3>
+                <p>Apoyamos comunidades bolivianas con productos de calidad.</p>
+            </div>
+
+            <div class="nosotros-card">
+                <span>♻️</span>
+                <h3>Sostenibilidad</h3>
+                <p>Trabajamos por un futuro más verde y responsable.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion" id="contacto">
+        <h2 class="seccion-titulo">Contacto</h2>
+        <form class="form-contacto">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea placeholder="Tu mensaje..." rows="5" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <h2>🎉 Oferta Especial</h2>
+            <p id="modalTexto"></p>
+            <button id="modalCerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Coca-Cola Bolivia</h3>
+        <p>Siempre cerca de ti.</p>
+        <p>© 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
